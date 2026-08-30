@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     stopAutoSlide();
     slideInterval = setInterval(() => {
       goToSlide(currentSlideIndex + 1);
-    }, 6500);
+    }, 5500);
   }
 
   function stopAutoSlide() {
