@@ -1,0 +1,78 @@
+BOA Mobile Banking
+Landing Page
+
+HEADLINE
+Your Whole Bank, Right in Your Pocket — with BOA Mobile Banking!
+
+SUB-HEADLINE
+Transfer money, apply for loans, manage your cards and access your International Card and FCY Account — all from one app, anytime, anywhere.
+
+PRIMARY CALL-TO-ACTION
+APPLY NOW
+
+WHAT YOU GET FROM BOA Mobile Banking
+
+01	Personal Micro Loan 
+	Get up to ETB 100,000 in a loan, with no collateral and no hassle.
+
+02	International Card 
+	Request your international card easily through the BOA app.
+
+03	FCY Account 
+	Open an FCY account easily through your Mobile Banking app and manage your foreign currency.
+
+04	Unlimited Transfer
+	Unlimited transfer amount between BOA accounts
+05	Salary Advance
+	Get part of your salary in advance when you need it.
+
+
+APPLICATION FLOW — SCREENING QUESTION
+
+First question on the web form: "Do you have a Bank of Abyssinia account?"
+
+Response	System Behavior
+
+YES	Show a second question: "Do you use Bank of Abyssinia Mobile Banking?"
+NO	Display the standard application form fields below
+
+(first pagination 5 fields 2 inputs in one flex and when clicking next the rest of the fields for inputs or selects 2 in a flex with previous option in the second pagination form with Submit button)
+• Full Name (Single box with example: John Smith William)
+• Mobile Number * (Open box with format examples: +251911111111 or 0911111111) 
+• National ID FCN * (Open box set to accept exactly 16 digits place a counter at the top right corner of the input) 
+• Nearby Branch Area * (Dropdown list (Bole, Megenaya , Kazanchis … with search input at the top)
+• Branch Name * (Dropdown list of branch(RAS, Bole , Piazza … with search input at the top)
+• Gender * (Dropdown: Male Or Female) 
+• Language Preference * (Dropdown: English, Amharic, Afaan Oromo, Tigrinya)
+• Preferred Communication Channel * (Checkboxes: SMS, WhatsApp, Telegram, Email) 
+• Email Address (Optional field. Mandatory only if Email is selected as preferred contact method) 
+• Additional Service Request Checkbox (Optional):  [ ] Do you need Mobile Banking? 
+• CRM Default:  Client Type: New Business  Product of Interest: Saving Account  Product of Interest: Mobile Banking (if the customer need the additional request.
+
+Second question on the web form (shown only if the answer to Question 1 is "Yes"): 
+
+"Do you use Bank of Abyssinia Mobile Banking?"
+
+Response	System Behavior
+
+YES	Do not collect new lead details. Display an informational message (see note below).
+["Thank you for banking with us! Since you're already a BOA Mobile Banking user, in order to use the services, open your app”]
+
+NO	Display the Mobile Banking application form fields below
+(first pagination 5 fields 2 inputs in one flex and when clicking next the rest of the fields for inputs or selects 2 in a flex with previous option in the second pagination form with Submit button)
+
+• Full Name * (Single box with example: John Smith William)
+• Account Number * (Mandatory open box for the existing account number) 
+• Mobile Number * (Open box with format examples: +251911111111 or 0911111111) 
+• Gender * (Dropdown: Male Or Female) 
+• Language Preference * (Dropdown: English, Amharic, Afaan Oromo, Tigrinya) 
+• Preferred Communication Channel * (Checkboxes: SMS, WhatsApp, Telegram, Email) 
+City (Drop Down list with search input at the top)
+• Branch Name * (Dropdown list with search input at the top) 
+• Email Address (Optional field. Mandatory only if Email is selected as preferred contact method) 
+- CRM Default:-(Disable the inputs by filling the values given)
+     • Client Type: Individual 
+    • Product of Interest: Mobile Banking 
+    • Customer Type: Existing
+
+Note: for a "No" response to Question 2 (has an account but does not yet use Mobile Banking), the flow shown here defaults to the original Mobile Banking application form fields, matching the pre-existing "Yes" behavior on Question 1. Please confirm this is the intended treatment for that segment.

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank of Abyssinia — Mobile Banking & Loan Campaign</title>
+  <meta name="description"
+    content="Apply for BOA Mobile Banking, Personal Micro Loans up to ETB 100,000, International Cards, and FCY Accounts with Bank of Abyssinia. Your whole bank right in your pocket!">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- Header / Navigation Bar -->
+  <header class="header" id="navbar">
+    <div class="container navbar">
+      <a href="#" class="logo-brand">
+        <img src="Asserts/boa_logo.png" alt="Bank of Abyssinia Logo" class="brand-logo-img">
+      </a>
+      <div class="header-right-wrap"> 
+        <a href="#apply-section" class="btn-primary header-apply-btn">APPLY NOW</a>
+        <div class="header-actions">
+          <!-- Language Selector -->
+          <div class="lang-switch">
+            <button type="button" id="btn-lang-am" class="lang-btn" onclick="setLanguage('am')">አማርኛ</button>
+            <button type="button" id="btn-lang-en" class="lang-btn active" onclick="setLanguage('en')">English</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Auto-Sliding Carousel (Full Viewport Height) -->
+  <section class="hero-section" id="hero">
+    <div class="hero-slider-container">
+
+      <!-- Slide 1 -->
+      <div class="slide-item active" id="slide-1">
+        <div class="slide-bg">
+          <img src="Asserts/hero1main.png" alt="BOA Mobile Banking Loan Campaign Slide 1">
+          <div class="slide-bg-overlay"></div>
+        </div>
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-left-content">
+              <span class="hero-badge-tag">Bank of Abyssinia Campaign</span>
+
+              <!-- Staggered Overlay Images for Slide 1 -->
+              <div class="hero-overlay-images">
+                <div class="overlay-img-wrapper">
+                  <img src="Asserts/hero1txt1.png" alt="BOA Overlay Headline 1" class="hero-txt1">
+                </div>
+                <div class="overlay-img-wrapper">
+                  <img src="Asserts/hero1txt2.png" alt="BOA Overlay Headline 2" class="hero-txt2">
+                </div>
+              </div>
+
+              <h1 class="hero-headline">
+                Your Whole Bank, Right in Your Pocket — <span>with BOA Mobile Banking!</span>
+              </h1>
+              <p class="hero-subheadline">
+                Transfer money, apply for loans, manage your cards, and access your International Card and FCY
+                Account—all from one app, anytime, anywhere.
+              <div class="hero-actions">
+                <a href="#apply-section" class="btn-primary btn-hero-cta">APPLY NOW</a>
+                <a href="#what-you-get" class="btn-secondary"
+                  style="color: #fff; border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.05);">Explore
+                  Features ↓</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide-item" id="slide-2">
+        <div class="slide-bg">
+          <img src="Asserts/hero2main.png" alt="BOA Mobile Banking Loan Campaign Slide 2">
+          <div class="slide-bg-overlay"></div>
+        </div>
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-left-content">
+              <span class="hero-badge-tag">Instant Micro Loan & Transfers</span>
+
+              <!-- Staggered Overlay Images for Slide 2 -->
+              <div class="hero-overlay-images">
+                <div class="overlay-img-wrapper">
+                  <img src="Asserts/hero2txt1.png" alt="BOA Overlay Headline 1" class="hero-txt1">
+                </div>
+                <div class="overlay-img-wrapper">
+                  <img src="Asserts/hero2txt2.png" alt="BOA Overlay Headline 2" class="hero-txt2">
+                </div>
+              </div>
+
+              <h1 class="hero-headline">
+                Unlimited Freedom & <span>Instant Financial Control</span>
+              </h1>
+              <p class="hero-subheadline">
+Get unlimited Personal Micro Loans with zero collateral. Apply anytime and enjoy fast, convenient access to funds whenever you need them.
+              </p>
+              <div class="hero-actions">
+                <a href="#apply-section" class="btn-primary btn-hero-cta">APPLY NOW</a>
+                <a href="#what-you-get" class="btn-secondary"
+                  style="color: #fff; border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.05);">Learn
+                  More ↓</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Pagination Controls -->
+      <div class="slider-controls">
+        <div class="slider-dot active" data-slide="0"></div>
+        <div class="slider-dot" data-slide="1"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET Section — Redesigned Value Proposition Cards & whysection.png Showcase -->
+  <section class="features-section" id="what-you-get">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">WHAT YOU GET FROM <span class="highlight-gold">BOA Mobile Banking</span></h2>
+        <p class="section-subtitle">Discover all the powerful financial features and services available right at your fingertips</p>
+      </div>
+
+      <div class="features-layout-grid" id="why-section">
+
+        <!-- 5 Feature Value Cards with PNG Icons -->
+        <div class="feature-cards-list">
+
+          <div class="feature-card">
+            <div class="feature-icon-badge">
+              <img src="Asserts/personal_loan.png" alt="Personal Micro Loan" class="feature-icon-img">
+            </div>
+            <div class="feature-info">
+              <h3>Personal Micro Loan</h3>
+              <p>Get up to ETB 100,000 in a loan, with no collateral and no hassle.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-badge">
+              <img src="Asserts/internationl_card.png" alt="International Card" class="feature-icon-img">
+            </div>
+            <div class="feature-info">
+              <h3>International Card</h3>
+              <p>Request your international card easily through the BOA app.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-badge">
+              <img src="Asserts/FCY_account.png" alt="FCY Account" class="feature-icon-img">
+            </div>
+            <div class="feature-info">
+              <h3>FCY Account</h3>
+              <p>Open an FCY account easily through your Mobile Banking app and manage your foreign currency.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-badge">
+              <img src="Asserts/unlimited.png" alt="Unlimited Transfer" class="feature-icon-img">
+            </div>
+            <div class="feature-info">
+              <h3>Unlimited Transfer</h3>
+              <p>Unlimited transfer amount between BOA accounts.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-badge">
+              <img src="Asserts/salary advance.png" alt="Salary Advance" class="feature-icon-img">
+            </div>
+            <div class="feature-info">
+              <h3>Salary Advance</h3>
+              <p>Get part of your salary in advance when you need it.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Modern Image Showcase displaying whysection.png -->
+        <div class="why-img-container">
+          <img src="Asserts/whysection.png" alt="BOA Mobile Banking App Experience" class="why-section-img">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM SECTION — Dynamic Single-Card Screening Wizard -->
+  <section class="form-section" id="apply-section">
+    <div class="container">
+      <div class="form-card-container">
+
+        <div class="form-header-title" id="form-header-title">
+          <h2>BOA Mobile Banking Application</h2>
+          <p>Complete the quick screening below to get started in less than 2 minutes</p>
+        </div>
+
+        <!-- SCREENING QUESTION 1 -->
+        <div class="screening-card" id="screening-q1">
+          <div class="screening-question">Do you have a Bank of Abyssinia account?</div>
+          <div class="screening-options">
+            <button type="button" class="btn-option" id="q1-yes">YES, I have an account</button>
+            <button type="button" class="btn-option" id="q1-no">NO, I am a new customer</button>
+          </div>
+        </div>
+
+        <!-- SCREENING QUESTION 2 (Shown dynamically if Q1 is YES) -->
+        <div class="screening-card" id="screening-q2" style="display: none;">
+          <div class="screening-question">Do you use Bank of Abyssinia Mobile Banking?</div>
+          <div class="screening-options">
+            <button type="button" class="btn-option" id="q2-yes">YES, I use Mobile Banking</button>
+            <button type="button" class="btn-option" id="q2-no">NO, I don't use Mobile Banking yet</button>
+          </div>
+        </div>
+
+        <!-- INFORMATIONAL MESSAGE FOR EXISTING MOBILE BANKING USERS (Q1 YES -> Q2 YES) -->
+        <div class="existing-user-msg-box" id="existing-user-info" style="display: none;">
+          <div class="existing-user-icon-wrap">
+            <img src="Asserts/tnakyouicon.png" alt="Thank You Icon" class="thankyou-icon-img">
+          </div>
+          <h3 class="thankyou-title" style="color: #925F00;">Thank you for banking with us!</h3>
+          <p class="thankyou-subtext" style="color: #925F00;">Since you're already a BOA Mobile Banking user, in order to use the services, open your app.</p>
+          
+          <div class="app-download-store-wrap">
+            <img src="Asserts/playstoreapp.png" alt="Download BOA Mobile Banking App" class="playstore-app-img">
+          </div>
+
+          <div class="change-selection-container" style="margin-top: 24px; margin-bottom: 0;">
+            <button type="button" class="btn-change-selection" id="btn-change-selection-info">
+              ✎ Change Selection
+            </button>
+          </div>
+        </div>
+
+        <!-- FORM A: NEW CUSTOMER APPLICATION (Q1 = NO) -->
+        <form id="new-customer-form" style="display: none;" novalidate>
+
+          <!-- STEP 1: 5 FIELDS -->
+          <div id="new-form-step-1" class="form-step-panel">
+            <div class="form-progress-bar">
+              <div class="form-progress-fill" style="width: 50%;"></div>
+            </div>
+            <div class="form-step-meta">
+              <span class="form-step-label">STEP 1 OF 2</span>
+              <h3 class="form-step-title">To get started, fill the form below</h3>
+            </div>
+
+            <div class="form-flex-grid">
+
+              <!-- 1. Full Name -->
+              <div class="form-group">
+                <label class="form-label" for="new-fullname">Full Name *</label>
+                <input type="text" id="new-fullname" class="input-control" placeholder="Full name">
+                <span class="error-msg" id="err-new-fullname"></span>
+              </div>
+
+              <!-- 2. Mobile Number -->
+              <div class="form-group">
+                <label class="form-label" for="new-mobile">Mobile Number *</label>
+                <input type="tel" id="new-mobile" class="input-control" placeholder="+251 ...">
+                <span class="error-msg" id="err-new-mobile"></span>
+              </div>
+
+              <!-- 3. National ID FCN (16 Digits Counter) -->
+              <div class="form-group">
+                <div class="form-label-row">
+                  <label class="form-label" for="new-national-id">National ID FCN *</label>
+                  <span class="digit-counter" id="national-id-counter">0 / 16 digits</span>
+                </div>
+                <input type="text" id="new-national-id" class="input-control" placeholder="Enter 16-digit National ID" maxlength="16">
+                <span class="error-msg" id="err-new-national-id"></span>
+              </div>
+
+              <!-- 4. Nearby Branch Area (Searchable Dropdown) -->
+              <div class="form-group">
+                <label class="form-label">Nearby Branch Area / District *</label>
+                <div class="custom-dropdown-container" id="dropdown-area-container">
+                  <div class="input-control dropdown-trigger" id="area-trigger">
+                    <span id="area-selected-text">Select Branch Area...</span>
+                    <span>▼</span>
+                  </div>
+                  <div class="dropdown-menu" id="area-menu">
+                    <div class="dropdown-search-box">
+                      <input type="text" id="area-search-input" placeholder="Search area (Bole, Megenagna...)" autocomplete="off">
+                    </div>
+                    <ul class="dropdown-options-list" id="area-options-list">
+                      <li class="dropdown-option-item" data-value="Bole">Bole</li>
+                      <li class="dropdown-option-item" data-value="Megenagna">Megenagna</li>
+                      <li class="dropdown-option-item" data-value="Kazanchis">Kazanchis</li>
+                      <li class="dropdown-option-item" data-value="Piazza">Piazza</li>
+                      <li class="dropdown-option-item" data-value="Sarbet">Sarbet</li>
+                      <li class="dropdown-option-item" data-value="Gotera">Gotera</li>
+                      <li class="dropdown-option-item" data-value="Mexico">Mexico</li>
+                      <li class="dropdown-option-item" data-value="CMC">CMC</li>
+                      <li class="dropdown-option-item" data-value="Ayat">Ayat</li>
+                    </ul>
+                  </div>
+                </div>
+                <input type="hidden" id="new-branch-area">
+                <span class="error-msg" id="err-new-branch-area"></span>
+              </div>
+
+              <!-- 5. Branch Name (Searchable Dropdown) -->
+              <div class="form-group">
+                <label class="form-label">Branch Name *</label>
+                <div class="custom-dropdown-container" id="dropdown-branch-container">
+                  <div class="input-control dropdown-trigger" id="branch-trigger">
+                    <span id="branch-selected-text">Select Branch Name...</span>
+                    <span>▼</span>
+                  </div>
+                  <div class="dropdown-menu" id="branch-menu">
+                    <div class="dropdown-search-box">
+                      <input type="text" id="branch-search-input" placeholder="Search branch (RAS, Bole...)" autocomplete="off">
+                    </div>
+                    <ul class="dropdown-options-list" id="branch-options-list">
+                      <li class="dropdown-option-item" data-value="RAS Branch">RAS Branch</li>
+                      <li class="dropdown-option-item" data-value="Bole Main Branch">Bole Main Branch</li>
+                      <li class="dropdown-option-item" data-value="Piazza Branch">Piazza Branch</li>
+                      <li class="dropdown-option-item" data-value="Megenagna Branch">Megenagna Branch</li>
+                      <li class="dropdown-option-item" data-value="Kazanchis Prime">Kazanchis Prime</li>
+                      <li class="dropdown-option-item" data-value="Finfinne Branch">Finfinne Branch</li>
+                      <li class="dropdown-option-item" data-value="Abyssinia Tower">Abyssinia Tower</li>
+                    </ul>
+                  </div>
+                </div>
+                <input type="hidden" id="new-branch-name">
+                <span class="error-msg" id="err-new-branch-name"></span>
+              </div>
+
+            </div>
+
+            <div class="form-actions-row">
+              <button type="button" class="btn-change-selection btn-step-change-selection">
+                ↺ Change Selection
+              </button>
+              <button type="button" class="btn-primary" id="btn-new-step1-next">Next Page →</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: REST OF FIELDS -->
+          <div id="new-form-step-2" class="form-step-panel" style="display: none;">
+            <div class="form-progress-bar">
+              <div class="form-progress-fill" style="width: 100%;"></div>
+            </div>
+            <div class="form-step-meta">
+              <span class="form-step-label">STEP 2 OF 2</span>
+              <h3 class="form-step-title">Additional Application Details</h3>
+            </div>
+
+            <div class="form-flex-grid">
+
+              <!-- 6. Gender -->
+              <div class="form-group">
+                <label class="form-label" for="new-gender">Gender *</label>
+                <select id="new-gender" class="select-control">
+                  <option value="">Select Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+                <span class="error-msg" id="err-new-gender"></span>
+              </div>
+
+              <!-- 7. Language Preference -->
+              <div class="form-group">
+                <label class="form-label" for="new-language">Language Preference *</label>
+                <select id="new-language" class="select-control">
+                  <option value="English">English</option>
+                  <option value="Amharic">Amharic</option>
+                  <option value="Afaan Oromo">Afaan Oromo</option>
+                  <option value="Tigrinya">Tigrinya</option>
+                </select>
+                <span class="error-msg" id="err-new-language"></span>
+              </div>
+
+              <!-- 8. Preferred Communication Channel -->
+              <div class="form-group full-width">
+                <label class="form-label">Preferred Communication Channel *</label>
+                <div class="checkbox-grid">
+                  <label class="checkbox-label"><input type="checkbox" name="comm_channel" value="SMS"> SMS</label>
+                  <label class="checkbox-label"><input type="checkbox" name="comm_channel" value="WhatsApp"> WhatsApp</label>
+                  <label class="checkbox-label"><input type="checkbox" name="comm_channel" value="Telegram"> Telegram</label>
+                  <label class="checkbox-label"><input type="checkbox" name="comm_channel" value="Email" id="chk-email"> Email</label>
+                </div>
+                <span class="error-msg" id="err-new-comm-channel"></span>
+              </div>
+
+              <!-- 9. Email Address (Optional, Mandatory if Email is selected above) -->
+              <div class="form-group full-width">
+                <div class="form-label-row">
+                  <label class="form-label" for="new-email">Email Address</label>
+                  <span id="email-req-badge" style="font-size:0.8rem; color:#64748b">(Optional)</span>
+                </div>
+                <input type="email" id="new-email" class="input-control" placeholder="john.smith@example.com">
+                <span class="error-msg" id="err-new-email"></span>
+              </div>
+
+              <!-- 10. Additional Service & CRM Default 1 (Flex Row) -->
+              <div class="form-group flex-half">
+                <label class="form-label">Additional Service Request</label>
+                <label class="checkbox-label mb-checkbox-card">
+                  <input type="checkbox" id="chk-need-mb">
+                  <strong>Do you need Mobile Banking?</strong>
+                </label>
+              </div>
+
+              <!-- CRM System Default: Client Type (Disabled Input) -->
+              <div class="form-group flex-half">
+                <label class="form-label">Client Type (CRM System Default)</label>
+                <input type="text" class="input-control crm-disabled-input" value="New Business" readonly disabled>
+              </div>
+
+              <!-- CRM System Defaults Next Line -->
+              <div class="form-group flex-half">
+                <label class="form-label">Primary Product (CRM System Default)</label>
+                <input type="text" class="input-control crm-disabled-input" value="Saving Account" readonly disabled>
+              </div>
+
+              <div class="form-group flex-half">
+                <label class="form-label">Product of Interest (CRM System Default)</label>
+                <input type="text" id="crm-mb-input" class="input-control crm-disabled-input" value="Mobile Banking (Optional)" readonly disabled style="opacity: 0.65;">
+              </div>
+
+            </div>
+
+            <div class="form-actions-row">
+              <div class="left-actions-group">
+                <button type="button" class="btn-change-selection btn-step-change-selection">
+                  ↺ Change Selection
+                </button>
+                <button type="button" class="btn-secondary" id="btn-new-step2-prev">← Previous</button>
+              </div>
+              <button type="submit" class="btn-primary">Submit Application</button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- FORM B: EXISTING ACCOUNT HOLDER MOBILE BANKING APPLICATION (Q1 = YES, Q2 = NO) -->
+        <form id="existing-customer-form" style="display: none;" novalidate>
+
+          <!-- STEP 1: 5 FIELDS -->
+          <div id="exist-form-step-1" class="form-step-panel">
+            <div class="form-progress-bar">
+              <div class="form-progress-fill" style="width: 50%;"></div>
+            </div>
+            <div class="form-step-meta">
+              <span class="form-step-label">STEP 1 OF 2</span>
+              <h3 class="form-step-title">To get started, fill the form below</h3>
+            </div>
+
+            <div class="form-flex-grid">
+
+              <!-- 1. Full Name -->
+              <div class="form-group">
+                <label class="form-label" for="exist-fullname">Full Name *</label>
+                <input type="text" id="exist-fullname" class="input-control" placeholder="Full name">
+                <span class="error-msg" id="err-exist-fullname"></span>
+              </div>
+
+              <!-- 2. Account Number -->
+              <div class="form-group">
+                <label class="form-label" for="exist-account">Account Number *</label>
+                <input type="text" id="exist-account" class="input-control" placeholder="e.g. 100012345678">
+                <span class="error-msg" id="err-exist-account"></span>
+              </div>
+
+              <!-- 3. Mobile Number -->
+              <div class="form-group">
+                <label class="form-label" for="exist-mobile">Mobile Number *</label>
+                <input type="tel" id="exist-mobile" class="input-control" placeholder="+251 ...">
+                <span class="error-msg" id="err-exist-mobile"></span>
+              </div>
+
+              <!-- 4. City (Searchable Dropdown) -->
+              <div class="form-group">
+                <label class="form-label">City *</label>
+                <div class="custom-dropdown-container" id="dropdown-city-container">
+                  <div class="input-control dropdown-trigger" id="city-trigger">
+                    <span id="city-selected-text">Select City...</span>
+                    <span>▼</span>
+                  </div>
+                  <div class="dropdown-menu" id="city-menu">
+                    <div class="dropdown-search-box">
+                      <input type="text" id="city-search-input" placeholder="Search city (Addis Ababa, Hawassa...)" autocomplete="off">
+                    </div>
+                    <ul class="dropdown-options-list" id="city-options-list">
+                      <li class="dropdown-option-item" data-value="Addis Ababa">Addis Ababa</li>
+                      <li class="dropdown-option-item" data-value="Hawassa">Hawassa</li>
+                      <li class="dropdown-option-item" data-value="Adama">Adama</li>
+                      <li class="dropdown-option-item" data-value="Dire Dawa">Dire Dawa</li>
+                      <li class="dropdown-option-item" data-value="Bahir Dar">Bahir Dar</li>
+                      <li class="dropdown-option-item" data-value="Mekelle">Mekelle</li>
+                      <li class="dropdown-option-item" data-value="Gondar">Gondar</li>
+                    </ul>
+                  </div>
+                </div>
+                <input type="hidden" id="exist-city">
+                <span class="error-msg" id="err-exist-city"></span>
+              </div>
+
+              <!-- 5. Branch Name (Searchable Dropdown) -->
+              <div class="form-group">
+                <label class="form-label">Branch Name *</label>
+                <div class="custom-dropdown-container" id="dropdown-exist-branch-container">
+                  <div class="input-control dropdown-trigger" id="exist-branch-trigger">
+                    <span id="exist-branch-selected-text">Select Branch...</span>
+                    <span>▼</span>
+                  </div>
+                  <div class="dropdown-menu" id="exist-branch-menu">
+                    <div class="dropdown-search-box">
+                      <input type="text" id="exist-branch-search-input" placeholder="Search branch..." autocomplete="off">
+                    </div>
+                    <ul class="dropdown-options-list" id="exist-branch-options-list">
+                      <li class="dropdown-option-item" data-value="RAS Branch">RAS Branch</li>
+                      <li class="dropdown-option-item" data-value="Bole Main Branch">Bole Main Branch</li>
+                      <li class="dropdown-option-item" data-value="Piazza Branch">Piazza Branch</li>
+                      <li class="dropdown-option-item" data-value="Megenagna Branch">Megenagna Branch</li>
+                      <li class="dropdown-option-item" data-value="Kazanchis Prime">Kazanchis Prime</li>
+                    </ul>
+                  </div>
+                </div>
+                <input type="hidden" id="exist-branch">
+                <span class="error-msg" id="err-exist-branch"></span>
+              </div>
+
+            </div>
+
+            <div class="form-actions-row">
+              <button type="button" class="btn-change-selection btn-step-change-selection">
+                ↺ Change Selection
+              </button>
+              <button type="button" class="btn-primary" id="btn-exist-step1-next">Next Page →</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: REST OF FIELDS -->
+          <div id="exist-form-step-2" class="form-step-panel" style="display: none;">
+            <div class="form-progress-bar">
+              <div class="form-progress-fill" style="width: 100%;"></div>
+            </div>
+            <div class="form-step-meta">
+              <span class="form-step-label">STEP 2 OF 2</span>
+              <h3 class="form-step-title">Additional Application Details</h3>
+            </div>
+
+            <div class="form-flex-grid">
+
+              <!-- 6. Gender -->
+              <div class="form-group">
+                <label class="form-label" for="exist-gender">Gender *</label>
+                <select id="exist-gender" class="select-control">
+                  <option value="">Select Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+                <span class="error-msg" id="err-exist-gender"></span>
+              </div>
+
+              <!-- 7. Language Preference -->
+              <div class="form-group">
+                <label class="form-label" for="exist-language">Language Preference *</label>
+                <select id="exist-language" class="select-control">
+                  <option value="English">English</option>
+                  <option value="Amharic">Amharic</option>
+                  <option value="Afaan Oromo">Afaan Oromo</option>
+                  <option value="Tigrinya">Tigrinya</option>
+                </select>
+                <span class="error-msg" id="err-exist-language"></span>
+              </div>
+
+              <!-- 8. Preferred Communication Channel -->
+              <div class="form-group full-width">
+                <label class="form-label">Preferred Communication Channel *</label>
+                <div class="checkbox-grid">
+                  <label class="checkbox-label"><input type="checkbox" name="exist_comm_channel" value="SMS"> SMS</label>
+                  <label class="checkbox-label"><input type="checkbox" name="exist_comm_channel" value="WhatsApp"> WhatsApp</label>
+                  <label class="checkbox-label"><input type="checkbox" name="exist_comm_channel" value="Telegram"> Telegram</label>
+                  <label class="checkbox-label"><input type="checkbox" name="exist_comm_channel" value="Email" id="exist-chk-email"> Email</label>
+                </div>
+                <span class="error-msg" id="err-exist-comm-channel"></span>
+              </div>
+
+              <!-- 9. Email Address (Optional, Mandatory if Email checked) -->
+              <div class="form-group full-width">
+                <div class="form-label-row">
+                  <label class="form-label" for="exist-email">Email Address</label>
+                  <span id="exist-email-req-badge" style="font-size:0.8rem; color:#64748b">(Optional)</span>
+                </div>
+                <input type="email" id="exist-email" class="input-control" placeholder="john.smith@example.com">
+                <span class="error-msg" id="err-exist-email"></span>
+              </div>
+
+              <!-- CRM System Defaults (Disabled Inputs) -->
+              <div class="form-group flex-third">
+                <label class="form-label">Client Type (CRM Default)</label>
+                <input type="text" class="input-control crm-disabled-input" value="Individual" readonly disabled>
+              </div>
+
+              <div class="form-group flex-third">
+                <label class="form-label">Product of Interest (CRM Default)</label>
+                <input type="text" class="input-control crm-disabled-input" value="Mobile Banking" readonly disabled>
+              </div>
+
+              <div class="form-group flex-third">
+                <label class="form-label">Customer Type (CRM Default)</label>
+                <input type="text" class="input-control crm-disabled-input" value="Existing" readonly disabled>
+              </div>
+
+            </div>
+
+            <div class="form-actions-row">
+              <div class="left-actions-group">
+                <button type="button" class="btn-change-selection btn-step-change-selection">
+                  ↺ Change Selection
+                </button>
+                <button type="button" class="btn-secondary" id="btn-exist-step2-prev">← Previous</button>
+              </div>
+              <button type="submit" class="btn-primary">Submit Application</button>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCCESS MODAL DIALOG -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-card">
+      <div class="success-icon-wrap">
+        <img src="Asserts/successicon.png" alt="Success Icon" class="success-icon-img">
+      </div>
+      <h3 style="font-size:1.6rem; color:var(--navy-900); font-weight:800; margin-bottom:8px">Application Submitted!
+      </h3>
+      <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:24px">
+        Thank you for applying for BOA Mobile Banking. Our team will contact you shortly via your preferred
+        communication channel.
+      </p>
+      <button type="button" class="btn-primary" id="btn-close-modal" style="width:100%">Back to Home</button>
+    </div>
+  </div>
+
+
+
+  <footer class="simple-black-footer">
+    <div class="container footer-simple-inner">
+      <div class="footer-copy-text">
+        Bank of Abyssinia © 2026 | All Rights Reserved.
+      </div>
+      <div class="footer-social-links">
+        <a href="#" aria-label="X Twitter" class="social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="social-icon social-fb">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="social-icon social-in">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-icon social-ig">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
