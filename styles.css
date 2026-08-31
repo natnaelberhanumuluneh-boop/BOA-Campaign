@@ -292,7 +292,7 @@ body {
   background: linear-gradient(90deg,
       rgba(31, 31, 31, 0.94) 0%,
       rgba(31, 31, 31, 0.78) 40%,
-      rgba(31, 31, 31, 0.20) 100%);
+      rgba(179, 179, 179, 0.2) 100%);
   z-index: 2;
 }
 
@@ -353,16 +353,11 @@ body {
   animation: slideFromRightLag 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.65s forwards;
 }
 
-.slide-item.active .hero-actions {
-  animation: slideFromRightLag 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.80s forwards;
-}
-
 .slide-item:not(.active) .hero-badge-tag,
 .slide-item:not(.active) .hero-txt1,
 .slide-item:not(.active) .hero-txt2,
 .slide-item:not(.active) .hero-headline,
-.slide-item:not(.active) .hero-subheadline,
-.slide-item:not(.active) .hero-actions {
+.slide-item:not(.active) .hero-subheadline {
   opacity: 0;
   transform: translateX(80px);
 }
@@ -1403,7 +1398,35 @@ body {
   }
 
   .hero-overlay-images {
-    align-items: center;
+    /* align-items: center; */
+  }
+
+  .overlay-img-wrapper {
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+  }
+
+  .overlay-img-wrapper img {
+    margin: 0 auto;
+  }
+
+  /* Reduce text overlay images in mobile view to logical sizes */
+  .hero-txt1 {
+    max-width: 65%;
+  }
+
+  .hero-txt2 {
+    max-width: 89%;
+  }
+
+  /* Specific reduction for hero2 overlay text images as requested */
+  img[src*="hero1txt1"] {
+    max-width: 50% !important;
+  }
+
+  img[src*="hero1txt2"] {
+    max-width: 72% !important;
   }
 
   .hero-subheadline {
@@ -1411,7 +1434,7 @@ body {
   }
 
   .hero-actions {
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .features-layout-grid {
@@ -1461,6 +1484,14 @@ body {
 }
 
 @media (max-width: 480px) {
+  img[src*="hero2txt1"] {
+    max-width: 45% !important;
+  }
+
+  img[src*="hero2txt2"] {
+    max-width: 68% !important;
+  }
+
   .hero-headline {
     font-size: 1.7rem;
   }
