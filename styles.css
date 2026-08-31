@@ -107,7 +107,7 @@ body {
 }
 
 .header.scrolled {
-  background: rgba(220, 220, 220, 0.96);
+  background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -290,9 +290,9 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(90deg,
-      rgba(11, 11, 16, 0.94) 0%,
-      rgba(11, 11, 16, 0.78) 40%,
-      rgba(11, 11, 16, 0.22) 100%);
+      rgba(31, 31, 31, 0.94) 0%,
+      rgba(31, 31, 31, 0.78) 40%,
+      rgba(31, 31, 31, 0.20) 100%);
   z-index: 2;
 }
 
